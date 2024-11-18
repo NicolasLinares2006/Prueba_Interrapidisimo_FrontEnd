@@ -1,0 +1,57 @@
+.eventos-card {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .users {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .header-cell {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #616161;
+  }
+  
+  .action-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .mat-elevation-z2 {
+    border-radius: 8px;
+  }
+  

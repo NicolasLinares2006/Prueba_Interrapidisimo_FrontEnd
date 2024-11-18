@@ -1,0 +1,54 @@
+.eventos-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .evento-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    margin-bottom: 16px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  button {
+    width: 48%;
+  }
+  
+  .mat-form-field {
+    font-size: 0.875rem;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .mat-flat-button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .mat-elevation-z2 {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mat-form-field-label {
+    font-weight: 500;
+    color: #616161;
+  }
+  
+  input, textarea {
+    font-size: 0.875rem;
+  }  

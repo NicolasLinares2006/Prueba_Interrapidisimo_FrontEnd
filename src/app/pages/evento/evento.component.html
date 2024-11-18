@@ -1,0 +1,41 @@
+<div class="eventos-form-container mat-elevation-z2">
+    <form [formGroup]="formEvento" class="evento-form">
+
+      @if (!mostrarCampo) {
+        <!-- Campo Nombre -->
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="nombre" placeholder="Ingrese el nombre del evento">
+        </mat-form-field>
+
+        <!-- Campo Descripción -->
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Descripción</mat-label>
+          <textarea matInput formControlName="descripcion" placeholder="Ingrese una descripción"></textarea>
+        </mat-form-field>
+      }
+  
+      <!-- Campo Fecha y Hora -->
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Fecha y Hora</mat-label>
+        <input matInput type="datetime-local" formControlName="fechaHora" placeholder="Seleccione la fecha y hora">
+      </mat-form-field>
+  
+      <!-- Campo Ubicación -->
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Ubicación</mat-label>
+        <input matInput formControlName="ubicacion" placeholder="Ingrese la ubicación">
+      </mat-form-field>
+  
+      <!-- Campo Capacidad Máxima -->
+      <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Capacidad Máxima</mat-label>
+        <input matInput type="number" formControlName="capacidadMaxima" placeholder="Ingrese la capacidad máxima">
+      </mat-form-field>
+      
+      <div class="form-actions">
+        <button mat-flat-button color="primary" (click)="guardarEvento()">Guardar Evento</button>
+        <button mat-flat-button color="warn" (click)="volver()">Regresar</button>
+      </div>
+    </form>
+  </div>  
